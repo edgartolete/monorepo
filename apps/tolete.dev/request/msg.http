@@ -1,0 +1,7 @@
+http POST https://example.com/api/data
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "age": 30
+}

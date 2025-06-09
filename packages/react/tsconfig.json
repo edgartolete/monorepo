@@ -1,0 +1,22 @@
+{
+  "extends": "@repo/tsconfig/base.json",
+  "includes": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "coverage",
+    "scripts",
+    "test",
+    "tests",
+    "tests-e2e",
+    "cypress",
+    "cypress.config.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "jsx": "react-jsx",
+    "types": ["react"]
+  }
+}
