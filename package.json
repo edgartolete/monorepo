@@ -7,6 +7,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
+    "release": "CI=true semantic-release",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -23,6 +24,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.0",
     "prettier": "^3.5.3",
+    "semantic-release": "^24.2.5",
     "turbo": "^2.5.4",
     "typescript": "5.8.2"
   },
