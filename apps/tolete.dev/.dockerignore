@@ -1,0 +1,10 @@
+.git
+.husky
+.next
+.turbo
+.vscode
+node_modules
+.gitlab-ci.yml
+.prettierrc.json
+redeploy.txt
+README.md
