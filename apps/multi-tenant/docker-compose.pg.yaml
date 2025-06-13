@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:13.21-alpine3.22
+    container_name: db
+    restart: always
+    ports:
+      - 5000:5432
+    env_file: .env.local
+    environment:
+      - POSTGRES_MULTIPLE_DATABASES=pse_analyzer
+    volumes:
+      - postgres_volume_data:/var/lib/postgresql/data
+    networks:
+      - db_network
+  adminer:
+    image: adminer:5.3.0-standalone
+    container_name: adminer
+    restart: always
+    ports:
+      - 5001:8080
+    env_file: .env.local
+    networks:
+      - db_network
+    depends_on:
+      - db
+networks:
+  db_network:
+volumes:
+  postgres_volume_data:
