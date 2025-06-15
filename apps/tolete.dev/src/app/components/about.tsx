@@ -5,12 +5,10 @@ const initialReactExp = new Date('February 20 2023')
 const initialFrontendExp = new Date('September 20 2020')
 const frontendYrsExp = differenceInYears(new Date(), initialFrontendExp)
 const reactYrsExp = differenceInYears(new Date(), initialReactExp)
-import { Button } from '@repo/react/components/button'
 
 export function About() {
   return (
     <Container className='py-20' id='about'>
-      <Button>Repo Button</Button>
       <h2 className='font-bold text-center text-3xl'> About Me</h2>
       <p className='mt-6'>
         I, Edgar Tolete is a web developer with {frontendYrsExp}+ years of experience, and &nbsp;{' '}
