@@ -1,18 +1,10 @@
 {
   "name": "@repo/react",
   "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.mts"
-    },
-    "./components": {
-      "import": "./dist/components/index.mjs",
-      "types": "./dist/components/index.d.mts"
-    },
     "./components/button": "./src/components/button/index.tsx"
   },
   "scripts": {
-    "dev": "tsup src/* --format esm --dts",
+    "dev": "tsup src/* --loader \".css=css\" --watch",
     "build": "tsup src/* --format esm --dts"
   },
   "peerDependencies": {
@@ -21,10 +13,12 @@
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",
-    "@repo/twconfig": "workspace:*",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
   }
 }
