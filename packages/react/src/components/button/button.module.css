@@ -1,0 +1,9 @@
+.base {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.pill {
+  border-radius: 50px;
+}
