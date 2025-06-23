@@ -1,5 +1,6 @@
 import Button from '@repo/react/components/button'
 import Image from 'next/image'
+import { CrossSiteAuthRedirect } from './form'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <Button pill className='bg-green-700'>
           test23
         </Button>
+        <CrossSiteAuthRedirect />
         <Image
           className='dark:invert'
           src='/next.svg'
