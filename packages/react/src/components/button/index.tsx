@@ -10,7 +10,7 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export default function Button({ children, pill, className, ...props }: ButtonProps) {
   return (
-    <button {...props} className={clsx(style.base, pill && style.pill, className)}>
+    <button {...props} className='ui:rounded-lg ui:border-2'>
       {children}
     </button>
   )

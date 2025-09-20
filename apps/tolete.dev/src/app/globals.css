@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@import '@repo/tailwind-config';
+/* @import '@repo/react/styles.css'; */
 
 @layer base {
   input::placeholder {

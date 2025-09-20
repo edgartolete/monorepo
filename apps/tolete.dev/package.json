@@ -12,6 +12,7 @@
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-dialog": "^1.1.11",
     "@radix-ui/react-slot": "^1.2.2",
+    "@repo/react": "workspace:*",
     "@tabler/icons-react": "^3.31.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -29,12 +30,11 @@
     "sonner": "^2.0.3",
     "swr": "^2.3.3",
     "tailwind-merge": "^3.2.0",
-    "zod": "^3.24.4",
-    "@repo/react": "workspace:*"
+    "zod": "^3.24.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
+    "@repo/tailwind-config": "workspace:*",
     "@types/node": "20.19.0",
     "@types/react": "19.1.8",
     "@types/react-dom": "^19",
