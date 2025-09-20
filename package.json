@@ -8,7 +8,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
     "release": "CI=true semantic-release",
-    "prepare": "husky"
+    "prepare": "husky",
+    "start": "turbo run start"
   },
   "lint-staged": {
     "*.{js, jsx, ts, tsx}": [
