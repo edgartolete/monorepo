@@ -73,7 +73,6 @@ export default function FormModal() {
     script.async = true
     script.defer = true
     document.head.appendChild(script)
-
     ;(window as WindowWithCaptcha).onSubmit = (token: string) => {
       if (token) setCaptchaValid(true)
     }
