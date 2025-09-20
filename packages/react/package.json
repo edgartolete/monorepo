@@ -11,7 +11,7 @@
     "dev": "tsup src/* --loader \".css=css\" --watch",
     "dev:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
     "dev:components": "tsc --watch",
-    "build": "tsup src/* --format esm --dts",
+    "build": "tsup src/* --format esm --loader \".css=css\"",
     "build:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
     "build:components": "tsc"
   },
@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@repo/tailwind-config": "workspace:*",
-    "@tailwindcss/cli": "^4.1.5",
     "@repo/tsconfig": "workspace:*",
+    "@tailwindcss/cli": "^4.1.5",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "tsup": "^8.5.0",
