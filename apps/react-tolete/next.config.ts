@@ -1,5 +1,6 @@
 import type { NextConfig } from 'next'
 
+// retrigger
 const nextConfig: NextConfig = {
   output: 'export',
   images: {
