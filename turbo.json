@@ -11,7 +11,7 @@
     "build": {
       "dependsOn": ["^build", "build:styles", "build:components"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**", ".output/**", ".nuxt/**"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", ".output/**", "out/**", ".nuxt/**"],
       "env": ["RESEND_API_KEY", "PROVIDER_EMAIL", "RECIPIENT_EMAIL"]
     },
     "build:styles": {
