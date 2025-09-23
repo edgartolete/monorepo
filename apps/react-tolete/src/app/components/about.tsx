@@ -1,6 +1,6 @@
-import { Container } from '@/components/container'
 import { differenceInYears } from 'date-fns'
 import { Docker, Flutter, Golang, NextjsIcon, Nodejs, React, Tailwindcss, Typescript } from './svgs'
+import { Container } from '../../components/container'
 const initialReactExp = new Date('February 20 2023')
 const initialFrontendExp = new Date('September 20 2020')
 const frontendYrsExp = differenceInYears(new Date(), initialFrontendExp)
